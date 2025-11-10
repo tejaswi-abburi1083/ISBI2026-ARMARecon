@@ -122,6 +122,10 @@ For example:
 ```
 fa_path = "./Histogram_Features_ADNI/Histogram_CN_FA_20bin_updated.npy"
 ```
+## Experimental Overview
+
+The proposed TransARMARecon framework was evaluated on the three neurodegenerative disease cohorts: CN–AD, CN–MCI, and FTD.
+Each cohort contains several baseline GNN models, namely GCN, GAT, ChebNet, and their respective reconstruction variants (Recon). Among all the settings, the ARMA-Recon model had the highest classification performance all along, which fully reflected its better representation capability and robustness under transductive learning with sparse labels.
 ## Atlas Acknowledgment
 The atlas used for the study is JHU-ICBM-labels-1mm.nii.gz and has been derived from the JHU ICBM-DTI-81 White-Matter Labels Atlas created by the Laboratory of Brain Anatomical MRI, Johns Hopkins University.
 
