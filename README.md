@@ -83,7 +83,7 @@ ISBI2026-TransARMARecon/
 │ ├── Step4_JHU_label_registration.py
 │ ├── Step5_Adni_histogram_calculation.py
 │ └── Step5_Histogram_Calculation_NIFD.ipynb
-│
+├── JHU-ICBM-labels-1mm.nii.gz   ← required for ROI-based feature extraction
 ├── README.md
 └── requirements.txt
 ```
