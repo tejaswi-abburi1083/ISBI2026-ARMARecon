@@ -96,6 +96,25 @@ ISBI2026-TransARMARecon/
    ```bash
    pip install -r requirements.txt
    ```
+## Note
+Before executing any classification or reconstruction scripts, please ensure that the Fractional Anisotropy (FA) histogram feature paths are correctly specified in your code.
+
+Pre-extracted FA histogram features for all subject categories are provided within the repository for reference:
+```
+├── Histogram_Features_ADNI/
+│   ├── Histogram_AD_FA_20bin_updated.npy
+│   ├── Histogram_CN_FA_20bin_updated.npy
+│   └── Histogram_MCI_FA_20bin_updated.npy
+│
+├── Histogram_Features_NIFD/
+│   ├── NIFD_Control_FA_Histogram_Feature.npy
+│   └── NIFD_Patients_FA_Histogram_Feature.npy
+```
+If you intend to utilize these provided example features, please update the corresponding file paths in your training or evaluation scripts.
+For example:
+```
+fa_path = "./Histogram_Features_ADNI/Histogram_CN_FA_20bin_updated.npy"
+```
 ## Data
 
 We use diffusion MRI data from the Alzheimer's Disease Neuroimaging Initiative (ADNI) database. Due to data access restrictions, users need to apply for access to the ADNI database directly. An example subject with the expected data structure is provided in the directory.
