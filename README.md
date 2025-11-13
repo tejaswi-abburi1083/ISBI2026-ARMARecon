@@ -1,6 +1,7 @@
 # ARMARecon: An ARMA Convolutional Filter based Graph Neural Network for Neurodegenerative Dementias Classsification
 ## Overview: 
 ARMARecon is a diffusion MRI–based graph learning framework designed for early detection of neurodegenerative diseases such as Alzheimer’s and Frontotemporal Dementia. The method integrates ARMA graph filtering with a reconstruction-driven objective, enhancing feature robustness and classification accuracy even with limited labeled data. By constructing a complete subject-level graph where each node represents FA-based features, ARMARecon captures both local and global brain connectivity patterns, overcoming the over-smoothing issue common in traditional GNNs. Experiments on ADNI and NIFD datasets demonstrate superior generalization and stability compared to classical machine learning and graph-based baselines.
+
 # Repository Structure
 ```
 ISBI2026-ARMARecon/
@@ -86,8 +87,8 @@ ISBI2026-ARMARecon/
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/tejaswi-abburi1083/ISBI2026-TransARMARecon.git
-   cd ISBI2026-TransARMARecon
+   git clone https://github.com/tejaswi-abburi1083/ISBI2026-ARMARecon.git
+   cd ISBI2026-ARMARecon
 2. Install the required packages:
    ```bash
    pip install -r requirements.txt
@@ -120,8 +121,7 @@ fa_path = "./Histogram_Features_ADNI/Histogram_CN_FA_20bin_updated.npy"
 ```
 ## Experimental Overview
 
-The proposed TransARMARecon framework was evaluated on the three neurodegenerative disease cohorts: CN–AD, CN–MCI, and FTD.
-Each cohort contains several baseline GNN models, namely GCN, GAT, ChebNet, and their respective reconstruction variants (Recon). Among all the settings, the ARMA-Recon model had the highest classification performance all along, which fully reflected its better representation capability and robustness under transductive learning with sparse labels.
+ARMARecon was evaluated on diffusion MRI data from the ADNI and NIFD cohorts, covering subjects across cognitively normal, MCI, and AD stages. The model was trained using 20-bin FA histogram features from key white matter regions and validated through 20-fold cross-validation, consistently outperforming baseline GNN and traditional classifiers in accuracy and robustness.
 ## Atlas Acknowledgment
 The atlas used for the study is JHU-ICBM-labels-1mm.nii.gz and has been derived from the JHU ICBM-DTI-81 White-Matter Labels Atlas created by the Laboratory of Brain Anatomical MRI, Johns Hopkins University.
 
