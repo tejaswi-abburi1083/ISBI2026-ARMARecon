@@ -1,6 +1,11 @@
 # ARMARecon: An ARMA Convolutional Filter based Graph Neural Network for Neurodegenerative Dementias Classsification
 ## Overview: 
 ARMARecon is a diffusion MRI–based graph learning framework designed for early detection of neurodegenerative diseases such as Alzheimer’s and Frontotemporal Dementia. The method integrates ARMA graph filtering with a reconstruction-driven objective, enhancing feature robustness and classification accuracy even with limited labeled data. By constructing a complete subject-level graph where each node represents FA-based features, ARMARecon captures both local and global brain connectivity patterns, overcoming the over-smoothing issue common in traditional GNNs. Experiments on ADNI and NIFD datasets demonstrate superior generalization and stability compared to classical machine learning and graph-based baselines.
+<p align="center">
+  <img src="ISBI_2026_Teja_updated.drawio.png" alt="ARMARecon Architecture" width="1000"/>
+  <br>
+  <em>Figure: Proposed ARMARecon architecture integrating ARMA graph filtering with reconstruction regularization.</em>
+</p>
 
 # Repository Structure
 ```
